@@ -42,22 +42,22 @@ with open(csvpath, newline="", encoding="utf8") as csvfile:
             winner = winner + ", " + winnerlist[w]
 
     print("Election Results")
-    print("-------------------------")
+    print("------------------------")
     print(f'Total Votes: {count}')
-    print("-------------------------")
+    print("------------------------")
     print(f'{table[0][0]}: {table[0][2]}% ({table[0][1]})')
     print(f'{table[1][0]}: {table[1][2]}% ({table[1][1]})')
     print(f'{table[2][0]}: {table[2][2]}% ({table[2][1]})')
     print(f'{table[3][0]}: {table[3][2]}% ({table[3][1]})')
-    print("-------------------------")
+    print("------------------------")
     print(f'Winner: {winner}')
-    print("-------------------------")
+    print("------------------------")
 
 output_file = os.path.join('PyPoll_Results.txt')
 
 with open(output_file, 'w') as txtfile:
-    txtfile.writelines('Election Results \n------------------------- \nTotal Votes: ' + str(count) +
-      '\n-------------------------\n')
+    txtfile.writelines('Election Results \n------------------------ \nTotal Votes: ' + str(count) +
+      '\n------------------------\n')
     for entry in table:
         txtfile.writelines(entry[0] + ": " + str(entry[2]) +'%  (' + str(entry[1]) + ')\n')
-    txtfile.writelines('------------------------- \nWinner: ' + winner + '\n-------------------------')
+    txtfile.writelines('------------------------ \nWinner: ' + winner + '\n------------------------')
