@@ -35,6 +35,12 @@ with open(csvpath, newline="", encoding="utf8") as csvfile:
     print(f'Average Change: ${ave}')
     print(f'Greatest Increase in Profits: {increasedate} (${greatincrease})')
     print(f'Greatest Decrease in Profits: {decreasedate} (${greatdecrease})')
+    print("---------------------------")
+    print(f"Over the course of the past {count} months, our company has totaled ${profit} in profit.")
+    print(f'Our average profit/loss per month was a loss of {ave}. I conclude that the average was negative,')
+    print(f'but our net was positive due to several months with large losses, principally due to August 2012, September 2013,')
+    print(f'February 2016, and July 2016.')
+
 
 output_file = os.path.join("PyBank_Results.txt")
 with open(output_file, "w") as txtfile:
@@ -45,4 +51,9 @@ with open(output_file, "w") as txtfile:
      txtfile.write("Average Change: " "$" + str(ave) + "\n")
      txtfile.write("Greatest Increase in Profits: " + str(increasedate) + " (" + "$" + str(greatincrease) + ")" + "\n")
      txtfile.write("Greatest Decrease in Profits: " + str(decreasedate) + " (" + "$" + str(greatdecrease) + ")" +  "\n")
+     txtfile.write("---------------------------" + "\n")
+     txtfile.write("Over the course of the past " + str(count) + " months, our company has totaled " + str(profit) + "in profit." + "\n")
+     txtfile.write('Our average profit/loss per month was a loss of ' + str(ave) + '. I conclude that the average was negative,' + "\n")
+     txtfile.write('but our net was positive due to several months with large losses, principally due to August 2012, September 2013,' + "\n")
+     txtfile.write('February 2016, and July 2016.' + "\n")
      txtfile.close()

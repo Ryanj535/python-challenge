@@ -5,3 +5,8 @@ Total: $38382578
 Average Change: $-9919.41
 Greatest Increase in Profits: Feb-2012 ($1170593)
 Greatest Decrease in Profits: Sep-2013 ($-1196225)
+---------------------------
+Over the course of the past 86 months, our company has totaled 38382578in profit.
+Our average profit/loss per month was a loss of -9919.41. I conclude that the average was negative,
+but our net was positive due to several months with large losses, principally due to August 2012, September 2013,
+February 2016, and July 2016.
