@@ -1,2 +1,2 @@
 # python-challenge
-python homework
+Analysis of basic business financials and election results.
